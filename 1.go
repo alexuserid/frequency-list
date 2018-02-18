@@ -1,4 +1,5 @@
 package main 
+//this programm was made to extract htmls from go docs for making a frequency dictionary
 
 import (
 	"fmt"
@@ -66,3 +67,5 @@ func main() {
 	textGetter()
 
 }
+
+//I use command << to write result in file
