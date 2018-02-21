@@ -15,13 +15,13 @@ var cleanUrlList []string
 func urlGetter() {
 	resp, err := http.Get("https://golang.org/pkg/")
 	if err != nil {
-		log.Fatal("http.Get: %v", err)
+		log.Fatalf("http.Get: %v", err)
 	}
 	defer resp.Body.Close()
 
 	bytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		log.Fatal("ioutil.ReadAll 2: %v", err)
+		log.Fatalf("ioutil.ReadAll 2: %v", err)
 	}
 
 
@@ -45,13 +45,13 @@ func textGetter() {
 	for _, partUrl := range cleanUrlList {
 		resp, err := http.Get("https://golang.org/pkg/" + partUrl)
 		if err != nil {
-			log.Fatal("http.Get 3: %v", err)
+			log.Fatalf("http.Get 3: %v", err)
 		}
 		defer resp.Body.Close()
 
 		bytes, err := ioutil.ReadAll(resp.Body)
 		if err != nil {
-			log.Fatal("ioutil.ReadAll 4: %v", err)
+			log.Fatalf("ioutil.ReadAll 4: %v", err)
 		}
 
 		fmt.Println(string(bytes))
