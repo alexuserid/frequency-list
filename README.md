@@ -8,4 +8,4 @@ then I used replacing in Sublime Text to clean unnecessary symbols with regexp:
   after that I can delete all unusable text out of the text
 I did it by regexp (№)([\\\sa-zA-Z0-9(),.;&':\-<>/#!?+`="▾*\[\]{}_—▹%|İKᾭ@世界$\^]*)(~) 
 ****
-dicGO1 sorts words and calculates frequency
+dicGO2 sorts words and calculates frequency
